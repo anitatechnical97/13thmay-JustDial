@@ -11,6 +11,23 @@ body {
     min-height: 5503px;
 } */
 
+ul > li:hover {
+    background-color: #e8e8e8;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+
+.a_submenu {
+    width:100px;
+    height: 100px;
+    background-color: red;
+    display: none;   /*Hide*/
+}
+
+.a_menu > li:hover ul {
+    display: block;    /*Show*/
+}
 header {
     height: 81px;
     width: 94%;
