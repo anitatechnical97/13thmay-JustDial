@@ -7,6 +7,7 @@
         <title>JustDial</title>
         <link rel="icon" href="./favicon.png"/>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link href="./css/main.css" rel="stylesheet"/>
     </head>
     <body>
@@ -16,78 +17,212 @@
                     <!-- <div class="col-1 a_tbdr">
                         <img class="mt-4 img-fluid" src="./img/logo.svg"/>
                     </div> -->
-                    <div class="col-4 col-sm-2 a_tbdr a_form_col">
-                        
+                    <div class="col-4 col-sm-1 a_tbdr a_form_col">                        
                         <!-- <img class="img-fluid mt-4 ms-1" src="./img/logo.svg"/> -->    <!-- its also working fine  -->
-
                         <a href="#" class="d-block h-100">
                             <img class="img-fluid mt-2" src="./img/logo.svg"/>
                         </a>
                     </div>
-                    <div class="col-8 col-sm-1 a_tbdr a_form_col">2</div>
-                    <div class="col-12 col-sm-8 a_tbdr ps-3 pe-3 pt-2 pb-2">
-
-                        <form class="d-sm-none d-md-none border p-1 rounded border-dark pt-0 pb-0">
+                    <div class="col-8 col-sm-3 a_tbdr a_form_col">
+                        <div>
+                            
+                        </div>
+                        <div class="d-block d-sm-none">
+                            <ul class="nav float-end mt-1 a_tnr mt-2">
+                                <li class="nav-item">
+                                  <a class="nav-link active bg-primary rounded-pill text-white pt-1 pb-1" aria-current="page" href="#">OPEN APP</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link mt-1 pt-0 pb-0" href="#">
+                                    <i class="fa-sharp fa-regular fa-bell text-dark"></i>
+                                  </a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link mt-1 pt-0 pb-0" href="#">
+                                    <i class="fa-solid fa-bars text-dark"></i>
+                                  </a>
+                                </li>
+                              </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-8 a_tbdr">
+                        <form class="d-sm-none d-md-none border p-1 rounded border-dark-subtle pt-0 pb-0 bg-white">
                             <div class="row">
-                                <div class="col-2 p-0"><img class="btn h-100" src="./img/search.svg"/></div>
-                                <div class="col-8 p-0"><input type="search" class="form-control border border-0" id="exampleInputPassword1"></div>
+                                <div class="col-1 p-0">
+                                    <!-- <img class="btn h-100" src="./img/search.svg"/> -->
+                                    <button class="btn">
+                                        <i class="fa-solid fa-magnifying-glass text-body-tertiary"></i>
+                                    </button>
+                                </div>
+                                <div class="col-9 p-0"><input type="search" placeholder="packers and movers" class="form-control border border-0 shadow-none" id="exampleInputPassword1"></div>
                                 <div class="col-2 p-0"><button type="submit" class="btn float-end"><img src="./img/mic.svg"/></button></div>
                             </div>
                           </form>
-
-
-                        <ul class="d-none d-sm-block nav mt-3 a_menu ms-4">
-                            <li class="nav-item">
-                              <a class="ps-1 pt-1 pb-1 pe-1 nav-link active" aria-current="page" href="#"><img src="./img/nav_language_icon.svg"/>English<img class="ps-1 pt-1 pb-1" src="./img/down_arrow5.svg"/></a>
-                              <ul class=" nav flex-column a_submenu bg-white border list-unstyled position-absolute">
+                          <div class="d-none d-sm-block a_tbdr">
+                            <ul class="nav mt-3 a_menu ms-4">
                                 <li class="nav-item">
-                                    <a href="#" class="mb-1 nav-link active text-secondary-emphasis">हिंदी</a>
+                                  <a class="ps-1 pt-1 pb-1 pe-1 nav-link active" aria-current="page" href="#"><img src="./img/nav_language_icon.svg"/>English<img class="ps-1 pt-1 pb-1" src="./img/down_arrow5.svg"/></a>
+                                  <ul class=" nav flex-column a_submenu bg-white border list-unstyled position-absolute">
+                                    <li class="nav-item">
+                                        <a href="#" class="mb-1 nav-link active text-secondary-emphasis">हिंदी</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="mb-1 nav-link text-secondary-emphasis">मराठी</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="mb-1 nav-link text-secondary-emphasis">বেঙ্গলি</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="mb-1 nav-link text-secondary-emphasis">ગુજરાતી</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="mb-1 nav-link text-secondary-emphasis">ಕನ್ನಡ</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="mb-1 nav-link text-secondary-emphasis">தமிழ்</a>
+                                    </li>
+                                  </ul>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="mb-1 nav-link text-secondary-emphasis">मराठी</a>
+                                  <a class="ps-1 pt-1 pb-1 pe-1 nav-link text-secondary-emphasis" href="#">We are Hiring</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="mb-1 nav-link text-secondary-emphasis">বেঙ্গলি</a>
+                                  <a class="ps-1 pt-1 pb-1 pe-1 nav-link text-secondary-emphasis" href="#">Investor Relations</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="mb-1 nav-link text-secondary-emphasis">ગુજરાતી</a>
+                                  <a class="ps-1 pt-1 pb-1 pe-1 nav-link text-secondary-emphasis"><img class="me-1" src="./img/nav_advertise_icon.svg"/>Advertise</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="mb-1 nav-link text-secondary-emphasis">ಕನ್ನಡ</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="mb-1 nav-link text-secondary-emphasis">தமிழ்</a>
-                                </li>
-                              </ul>
-                            </li>
-                            <li class="nav-item">
-                              <a class="ps-1 pt-1 pb-1 pe-1 nav-link text-secondary-emphasis" href="#">We are Hiring</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="ps-1 pt-1 pb-1 pe-1 nav-link text-secondary-emphasis" href="#">Investor Relations</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="ps-1 pt-1 pb-1 pe-1 nav-link text-secondary-emphasis"><img class="me-1" src="./img/nav_advertise_icon.svg"/>Advertise</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="ps-1 pt-1 pb-1 pe-1 nav-link text-secondary-emphasis"><img class="me-1" src="./img/nav_listing_icon.svg"/>Free Listing</a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="ps-1 pt-1 pb-1 pe-1 nav-link text-secondary-emphasis"><img src="./img/notify_icon.svg"/></a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="ps-1 pe-1 nav-link text-secondary-emphasis"><img src="./img/jd_login_icon.svg"/>Login / Sign Up</a>
-                              </li>
-                          </ul>
+                                    <a class="ps-1 pt-1 pb-1 pe-1 nav-link text-secondary-emphasis"><img class="me-1" src="./img/nav_listing_icon.svg"/>Free Listing</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="ps-1 pt-1 pb-1 pe-1 nav-link text-secondary-emphasis"><img src="./img/notify_icon.svg"/></a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="ps-1 pe-1 nav-link text-secondary-emphasis"><img src="./img/jd_login_icon.svg"/>Login / Sign Up</a>
+                                  </li>
+                            </ul>
+                          </div>                   
                     </div>
                 </div>
             </header>
-            <main class="a_tbdr bg-primary mt-5 a_mt-5">Main</main>
+
+
+
+            <main class="a_tbdr mt-5 a_mt-5 bg-white">
+                
+                <div class="a_m1 d-block d-sm-none">
+                    <div class="row m-0">
+                        <div class="col-3 p-3">
+                            <a href="#" class="btn btn-sm text-center">
+                                <img src="./img/1.gif" class="img-fluid"/>
+                                B2B
+                            </a>
+                        </div>
+                        <div class="col-3 p-4">
+                            <a href="#" class="btn btn-sm text-center">
+                                <img src="./img/2.svg" class="img-fluid"/>
+                                Doctors
+                            </a>
+                        </div>
+                        <div class="col-3 p-4">
+                            <a href="#" class="btn btn-sm text-center">
+                                <img src="./img/3.svg" class="img-fluid"/>
+                                Travel
+                            </a>
+                        </div>
+                        <div class="col-3 p-4">
+                              <a href="#" class="btn btn-sm text-center">
+                                <img src="./img/4.svg" class="img-fluid"/>
+                                Beauty
+                            </a>
+                        </div>
+                        <div class="col-3 p-4">
+                            <a href="#" class="btn btn-sm text-center">
+                                <img src="./img/5.svg" class="img-fluid"/>
+                                Interiors Designers
+                            </a>
+                        </div>
+                        <div class="col-3 p-4">
+                            <a href="#" class="btn btn-sm text-center">
+                                <img src="./img/6.svg" class="img-fluid"/>
+                                Consultants
+                            </a>
+                        </div>
+                        <div class="col-3 p-4">
+                            <a href="#" class="btn btn-sm text-center">
+                                <img src="./img/7.svg" class="img-fluid"/>
+                                Rents & Hire
+                            </a>
+                        </div>
+                        <div class="col-3 p-4">
+                            <a href="#" class="btn btn-sm text-center">
+                                <img src="./img/8.svg" class="img-fluid"/>
+                                Wedding Requisites
+                            </a>
+                        </div>
+                        <div class="col-3 p-4">
+                            <a href="#" class="btn btn-sm text-center">
+                                <img src="./img/9.svg" class="img-fluid"/>
+                                Home Services
+                            </a>
+                        </div>
+                        <div class="col-3 p-5">
+                            <a href="#" class="btn btn-sm text-center">
+                                <img src="./img/10.svg" class="img-fluid"/>
+                                Jobs
+                            </a>
+                        </div>
+                        <div class="col-3 p-4">
+                            <a href="#" class="btn btn-sm text-center">
+                                <img src="./img/11.svg" class="img-fluid"/>
+                                Repairs & Services
+                            </a>
+                        </div>
+                        <div class="col-3 p-4">
+                            <a href="#" class="btn btn-sm text-center">
+                                <img src="./img/12.gif" class="img-fluid"/>
+                                PG/Hostel
+                            </a>
+                        </div>
+                        <div class="col-3 p-4">
+                            <a href="#" class="btn btn-sm text-center">
+                                <img src="./img/13.svg" class="img-fluid"/>
+                                Loans
+                            </a>
+                        </div>
+                        <div class="col-3 p-4">
+                              <a href="#" class="btn btn-sm text-center">
+                                <img src="./img/14.svg" class="img-fluid"/>
+                                Real Estate
+                            </a>
+                        </div>
+                        <div class="col-3 p-4">
+                            <a href="#" class="btn btn-sm text-center">
+                                <img src="./img/15.svg" class="img-fluid"/>
+                                Education
+                            </a>
+                        </div>
+                        <div class="col-3 p-4">
+                            <a href="#" class="btn btn-sm text-center">
+                                <img src="./img/16.svg" class="img-fluid"/>
+                                Show More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="a_m1">m2 </div>
+                <div class="a_m1">m3 </div> -->
+            </main>
             <footer class="a_tbdr bg-warning">
                 <div class="a_footer1 border-top border-bottom">footer1</div>
                 <div class="a_footer2 border-bottom">footer2</div>
                 <div class="a_footer3 border-bottom">footer3</div>
-                <div class="a_footer4">footer4</div>
+                <div class="a_footer
+                  <a href="#" class="btn btn-sm text-center">
+                                <img src="./img/1.gif" class="img-fluid"/>
+                                B2B
+                            </a>">footer4</div>
             </footer>
         </div>
          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script/>
