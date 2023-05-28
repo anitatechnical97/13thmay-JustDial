@@ -35,11 +35,15 @@ header {
 }
 
 main {
-    height: 3622px;
+    /* height: 3622px; */
     /* top: 82px; */
+     padding-bottom: 500px;
     
 }
 
+div.m11 {
+    height: 250px;
+}
 .mt-5.a_mt-5 {
     margin-top: 5rem!important;
 }
@@ -129,9 +133,13 @@ footer {
 
     footer {
         position: fixed;
-        bottom: 0px;
+        bottom: -2px;
         left: 0px;
         width: 100%;
+    }
+
+    .a_tbdr {
+        border: 1px dashed white;
     }
 
 }

@@ -1,0 +1,18 @@
+(function(w, d, s, l, i) {
+    w[l] = w[l] || [];
+    w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+    });
+    var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+    j.async = true;
+    j.src = i == 'GTM-MFKPQS' ? '//www.googletagmanager.com/gtm.js?id=' + i + dl : '//www.googletagmanager.com/gtag/js?id=' + i + dl;
+    f.parentNode.insertBefore(j, f);
+})(window, document, 'script', 'dataLayer', (() => {
+  var qrysrc = window.location.search || '';
+  var rx = /jdlite=1/g;
+  return (qrysrc && rx.test(qrysrc)) ? 'UA-31027791-4' : 'GTM-MFKPQS'
+})());
+console.info('Google Task Manager loaded.');
