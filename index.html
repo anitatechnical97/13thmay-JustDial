@@ -13,82 +13,130 @@
         <link href="./css/main.css" rel="stylesheet"/>
     </head>
     <body>
+
+        <!--   Model Start  -->
         <div class="modal hide" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-fullscreen">
               <div class="modal-content">
-                <div class="modal-header border-bottom-0">
-                    <div class="float-start">
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                </div>
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="col">
-                            <a href="#" class="btn text-body-tertiary fw-bold">Sign in</a>
+                <!-- <div class="modal-header border-bottom-0">
+                </div> -->
+                <div class="modal-body p-0">
+                    <div class="d-none">
+                        <div class="clearfix">
+                            <div class="float-start ms-3 mb-4">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
                         </div>
-                        <div class="col text-end">
-                            <a href="#">
-                                <img class="img-fluid w-25" src="./img/profile.png"/>
-                            </a>
+                        <div class="row m-0">
+                            <div class="col">
+                                <a href="#" class="btn text-body-tertiary fw-bold">Sign in</a>
+                            </div>
+                            <div class="col text-end">
+                                <a href="#">
+                                    <img class="img-fluid w-25 me-4" src="./img/profile.png"/>
+                                </a>
+                            </div>
                         </div>
+    
+                        <div class="mt-4 ms-4">
+                            <button type="button" class="btn border border-light-subtle rounded-pill  me-1
+                            ">Saved</button>
+                            <button type="button" class="btn border border-light-subtle rounded-pill me-1
+                            ">Favorites</button>
+                            <button type="button" class="btn border border-light-subtle rounded-pill me-1
+                            ">Interests</button>
+                        </div>
+                        <ul class="nav flex-column mt-3">
+                            <li class="nav-item">
+                              <a class="nav-link active text-dark mb-2 text-body-tertiary" aria-current="page" href="#"><img class="img-fluid me-3" src="./img/Languageicon.svg"/>English</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link text-dark mb-2 text-body-tertiary" href="#"><img class="img-fluid me-3" src="./img/helpicon.svg"/>Customer Service</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link text-dark mb-2 text-body-tertiary" href="#"><img class="img-fluid me-3" src="./img/listbusinessicon.svg"/>List Your Business <img class="img-fluid" style="height: 23px;" src="./img/free.gif"/></a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link text-dark mb-2 text-body-tertiary"><img class="img-fluid me-3" src="./img/advertiseicon.svg"/>Advertise</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark mb-2 text-body-tertiary"><img class="img-fluid me-3" src="./img/mytransactionsicon.svg"/>My Transactions</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link text-dark mb-2 text-body-tertiary"><img class="img-fluid me-3" src="./img/mytransactionsicon.svg"/>Wishlist</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link text-dark mb-2 text-body-tertiary"><img class="img-fluid me-3" src="./img/managequotesicon.svg"/>Manage Quotes</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link text-dark mb-2 text-body-tertiary"><img class="img-fluid me-3" src="./img/wearehiring.svg"/>We are hiring</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link text-dark mb-2 text-body-tertiary"><img class="img-fluid me-3" src="./img/settings.svg"/>Settings</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link text-dark mb-2 text-body-tertiary"><img class="img-fluid me-3" src="./img/privacyicon.svg"/>Privacy Policy</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link text-dark mb-2 text-body-tertiary"><img class="img-fluid me-3" src="./img/investorsrelation.svg"/>Investor Relations</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link text-dark mb-2 text-body-tertiary"><img class="img-fluid me-3" src="./img/newproductsicon.svg"/>What's New</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link text-dark mb-2 text-body-tertiary"><img class="img-fluid me-3" src="./img/othersicon.svg"/>Others</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link text-dark mb-2 text-body-tertiary"><img class="img-fluid me-3" src="./img/logouticon.svg"/>Login</a>
+                              </li>
+                          </ul>
                     </div>
 
-                    <div class="mt-4">
-                        <button type="button" class="btn btn-outline-secondary rounded-pill  me-1
-                        ">Saved</button>
-                        <button type="button" class="btn btn-outline-secondary rounded-pill me-1
-                        ">Favorites</button>
-                        <button type="button" class="btn btn-outline-secondary rounded-pill me-1
-                        ">Interests</button>
-                    </div>
-                    <ul class="nav flex-column mt-3">
-                        <li class="nav-item">
-                          <a class="nav-link active text-dark mb-2 text-body-tertiary" aria-current="page" href="#"><img class="img-fluid me-3" src="./img/Languageicon.svg"/>English</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link text-dark mb-2 text-body-tertiary" href="#"><img class="img-fluid me-3" src="./img/helpicon.svg"/>Customer Service</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link text-dark mb-2 text-body-tertiary" href="#"><img class="img-fluid me-3" src="./img/listbusinessicon.svg"/>List Your Business</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link text-dark mb-2 text-body-tertiary"><img class="img-fluid me-3" src="./img/advertiseicon.svg"/>Advertise</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark mb-2 text-body-tertiary"><img class="img-fluid me-3" src="./img/mytransactionsicon.svg"/>My Transactions</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link text-dark mb-2 text-body-tertiary"><img class="img-fluid me-3" src="./img/mytransactionsicon.svg"/>Wishlist</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link text-dark mb-2 text-body-tertiary"><img class="img-fluid me-3" src="./img/managequotesicon.svg"/>Manage Quotes</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link text-dark mb-2 text-body-tertiary"><img class="img-fluid me-3" src="./img/wearehiring.svg"/>We are hiring</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link text-dark mb-2 text-body-tertiary"><img class="img-fluid me-3" src="./img/settings.svg"/>Settings</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link text-dark mb-2 text-body-tertiary"><img class="img-fluid me-3" src="./img/privacyicon.svg"/>Privacy Policy</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link text-dark mb-2 text-body-tertiary"><img class="img-fluid me-3" src="./img/investorsrelation.svg"/>Investor Relations</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link text-dark mb-2 text-body-tertiary"><img class="img-fluid me-3" src="./img/newproductsicon.svg"/>What's New</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link text-dark mb-2 text-body-tertiary"><img class="img-fluid me-3" src="./img/othersicon.svg"/>Others</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link text-dark mb-2 text-body-tertiary"><img class="img-fluid me-3" src="./img/logouticon.svg"/>Login</a>
-                          </li>
-                      </ul>
+                <div class="d-block m-0">
+                    <button class="btn position-absolute top-0 end-0 text-white me-2 mt-3 rounded-4 pt-1 pb-1" style=" background-color: rgba(0, 0, 0, 0.2); " data-bs-dismiss="modal">Skip</button>
+                    <img src="./img/banner/loginbanner.avif" class="img-fluid"/>
+                    <form class="bg-white p-4 rounded-5 rounded-bottom-0 position-relative" style="top:-15px">
+                        <div class="mb-3 text-center">
+                         <h5>India′s # 1 Local Search Engine</h5>
+                        </div>
+                        <div class="mb-3 border rounded">
+                            <div class="row m-0">
+                                <div class="col-2 p-0">
+                                  <button class="btn">+91</button>
+                                </div>
+                                <div class="col-10 p-0">
+                                     <input type="text" class="form-control shadow-none border-0" id="exampleInputPassword1" placeholder="Mobile Number">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-primary disabled pt-2 pb-2 fs-6" type="button">Login with OTP</button>
+                        </div>
+                            <div class="mt-3 text-center">
+                                or continue with
+                            </div>
+                        <div class="d-grid gap-2">
+                             <div class="mt-3 ps-5 pt-2 pb-2">   
+                                <img class="img-fluid" src="./img/banner/truecaller.svg"/>
+                            <button class="btn btn-white disabled fs-6 border border-light-subtle" type="button">
+                               <span class="text-dark ms-4">Truecaller</span>
+                            </button>
+                            </div>    
+                        </div>
+                    </form>
+
+
+                </div>
+
+
+
+
                 </div>
               </div>
             </div>
           </div>
+
+          <!--   Model End   -->
 
         <div class="container bg-white a_cont a_tbdr">
             <header class="a_tbdr bg-success fixed-top bg-white">
@@ -112,7 +160,7 @@
                                   <a class="nav-link active bg-primary rounded-pill text-white pt-1 pb-1" aria-current="page" href="#">OPEN APP</a>
                                 </li>
                                 <li class="nav-item">
-                                  <a class="nav-link mt-1 pt-0 pb-0" href="#">
+                                  <a class="nav-link mt-1 pt-0 pb-0" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                     <i class="fa-sharp fa-regular fa-bell text-dark"></i>
                                   </a>
                                 </li>
@@ -189,100 +237,103 @@
                 
                 <div class="a_m1 d-block d-sm-none">
                     <div class="row m-0">
-                        <div class="col-3 a_tbdr p-1">
-                            <a href="#" class="btn btn-sm text-center">
-                                <img src="./img/1.gif" class="img-fluid"/>
-                                B2B
+                        <div class="col-3 a_tbdr p-3">
+                            <a href="#" class="btn btn-sm text-center a_fs">
+                                <img src="./img/1.gif" class="img-fluid d-block"/>
+                                <span class="fw-semibold text-light-emphasis">B2B</span>
                             </a>
                         </div>
-                        <div class="col-3 a_tbdr p-1">
-                            <a href="#" class="btn btn-sm text-center">
-                                <img src="./img/2.svg" class="img-fluid"/>
-                                Doctors
+                        <div class="col-3 a_tbdr p-3">
+                            <a href="#" class="btn btn-sm text-center a_fs">
+                                <img src="./img/2.svg" class="img-fluid d-block"/>
+                                <span class="fw-semibold text-light-emphasis">Doctors</span>
+                                
                             </a>
                         </div>
-                        <div class="col-3 a_tbdr p-1">
-                            <a href="#" class="btn btn-sm text-center">
-                                <img src="./img/3.svg" class="img-fluid"/>
-                                Travel
+                        <div class="col-3 a_tbdr p-3">
+                            <a href="#" class="btn btn-sm text-center a_fs">
+                                <img src="./img/3.svg" class="img-fluid d-block"/>
+                                <span class="fw-semibold text-light-emphasis">Travel</span>                                
                             </a>
                         </div>
-                        <div class="col-3 a_tbdr p-1">
-                              <a href="#" class="btn btn-sm text-center">
-                                <img src="./img/4.svg" class="img-fluid"/>
-                                Beauty
+                        <div class="col-3 a_tbdr p-3">
+                              <a href="#" class="btn btn-sm text-center a_fs">
+                                <img src="./img/4.svg" class="img-fluid d-block"/>
+                                <span class="fw-semibold text-light-emphasis">Beauty</span>
                             </a>
                         </div>
-                        <div class="col-3 a_tbdr p-1">
-                            <a href="#" class="btn btn-sm text-center">
-                                <img src="./img/5.svg" class="img-fluid"/>
-                                Interiors Designers
+                        <div class="col-3 a_tbdr p-3">
+                            <a href="#" class="btn btn-sm text-center a_fs">
+                                <img src="./img/5.svg" class="img-fluid d-block"/>
+                                <span class="fw-semibold text-light-emphasis">Interiors Designers</span>
                             </a>
                         </div>
-                        <div class="col-3 a_tbdr p-1">
-                            <a href="#" class="btn btn-sm text-center">
-                                <img src="./img/6.svg" class="img-fluid"/>
-                                Consultants
+                        <div class="col-3 a_tbdr p-3">
+                            <a href="#" class="btn btn-sm text-center a_fs">
+                                <img src="./img/6.svg" class="img-fluid d-block"/>
+                                <!-- <span class="fw-bold text-light-emphasis" >Consultants</span> -->
+                                <span class="fw-semibold text-light-emphasis" >Consultants</span>
+                                
                             </a>
                         </div>
-                        <div class="col-3 a_tbdr p-1">
-                            <a href="#" class="btn btn-sm text-center">
-                                <img src="./img/7.svg" class="img-fluid"/>
-                                Rents & Hire
+                        <div class="col-3 a_tbdr p-3">
+                            <a href="#" class="btn btn-sm a_fs">
+                                <img src="./img/7.svg" class="img-fluid d-block"/>
+                                <span class="fw-semibold text-light-emphasis" >Rent & Hire</span>
                             </a>
                         </div>
-                        <div class="col-3 a_tbdr p-1">
-                            <a href="#" class="btn btn-sm text-center">
-                                <img src="./img/8.svg" class="img-fluid"/>
-                                Wedding Requisites
+                        <div class="col-3 a_tbdr p-3">
+                            <a href="#" class="btn btn-sm text-center a_fs">
+                                <img src="./img/8.svg" class="img-fluid d-block"/>
+                                <span class="fw-semibold text-light-emphasis" >Wedding Requisites</span>
                             </a>
                         </div>
-                        <div class="col-3 a_tbdr p-1">
-                            <a href="#" class="btn btn-sm text-center">
-                                <img src="./img/9.svg" class="img-fluid"/>
-                                Home Services
+                        <div class="col-3 a_tbdr p-3">
+                            <a href="#" class="btn btn-sm text-center a_fs">
+                                <img src="./img/9.svg" class="img-fluid d-block"/>
+                                <span class="fw-semibold text-light-emphasis" >Home Services</span>
                             </a>
                         </div>
-                        <div class="col-3 a_tbdr p-1">
-                            <a href="#" class="btn btn-sm text-center">
-                                <img src="./img/10.svg" class="img-fluid"/>
-                                Jobs
+                        <div class="col-3 a_tbdr p-4">
+                            <a href="#" class="btn btn-sm text-center a_fs">
+                                <img src="./img/10.svg" class="img-fluid d-block"/>
+                                <span class="fw-semibold text-light-emphasis" >Jobs</span>
                             </a>
                         </div>
-                        <div class="col-3 a_tbdr p-1">
-                            <a href="#" class="btn btn-sm text-center">
-                                <img src="./img/11.svg" class="img-fluid"/>
-                                Repairs & Services
+                        <div class="col-3 a_tbdr p-3">
+                            <a href="#" class="btn btn-sm text-center a_fs">
+                                <img src="./img/11.svg" class="img-fluid d-block"/>
+                                <span class="fw-semibold text-light-emphasis" >Repairs & Services</span>
                             </a>
                         </div>
-                        <div class="col-3 a_tbdr p-1">
-                            <a href="#" class="btn btn-sm text-center">
-                                <img src="./img/12.gif" class="img-fluid"/>
-                                PG/Hostel
+                        <div class="col-3 a_tbdr p-3">
+                            <a href="#" class="btn btn-sm text-center a_fs">
+                                <img src="./img/12.gif" class="img-fluid d-block"/>
+                                <span class="fw-semibold text-light-emphasis" >PG/Hostel</span>
                             </a>
                         </div>
-                        <div class="col-3 a_tbdr p-1">
-                            <a href="#" class="btn btn-sm text-center">
-                                <img src="./img/1.gif" class="img-fluid"/>
-                                B2B
+                        <div class="col-3 a_tbdr p-3">
+                            <a href="#" class="btn btn-sm text-center a_fs">
+                                <img src="./img/13.svg" class="img-fluid d-block"/>
+                                <span class="fw-semibold text-light-emphasis" >Loans</span>
                             </a> 
                         </div>
-                        <div class="col-3 a_tbdr p-1">
-                              <a href="#" class="btn btn-sm text-center">
-                                <img src="./img/14.svg" class="img-fluid"/>
-                                Real Estate
+                        <div class="col-3 a_tbdr p-3">
+                              <a href="#" class="btn btn-sm text-center a_fs">
+                                <img src="./img/14.svg" class="img-fluid d-block"/>
+                                <span class="fw-semibold text-light-emphasis" > Real Estate</span>
                             </a>
                         </div>
-                        <div class="col-3 a_tbdr p-1">
-                            <a href="#" class="btn btn-sm text-center">
-                                <img src="./img/15.svg" class="img-fluid"/>
-                                Education
+                        <div class="col-3 a_tbdr p-3">
+                            <a href="#" class="btn btn-sm text-center a_fs">
+                                <img src="./img/15.svg" class="img-fluid d-block"/>
+                                <span class="fw-semibold text-light-emphasis" >Education</span>
                             </a>
                         </div>
-                        <div class="col-3 a_tbdr p-1">
-                            <a href="#" class="btn btn-sm text-center">
-                                <img src="./img/16.svg" class="img-fluid"/>
-                                Show More
+                        <div class="col-3 a_tbdr p-3">
+                            <a href="#" class="btn btn-sm text-center a_fs">
+                                <img src="./img/16.svg" class="img-fluid d-block"/>
+                                <span class="fw-semibold text-light-emphasis float-start" >Show More</span>
                             </a>
                         </div>
                     </div>

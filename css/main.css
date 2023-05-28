@@ -69,6 +69,10 @@ footer {
     font-family: 'Times New Roman', Times, serif;
 }
 
+.a_fs {
+    font-size: 10.618px;
+}
+
 
 ::-webkit-input-placeholder {
     font-size: 15px;
