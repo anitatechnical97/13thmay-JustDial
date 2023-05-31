@@ -14,6 +14,10 @@
     </head>
     <body>
 
+      <button class="a_scrollToTop btn bg-light rounded-circle position-fixed bottom-0 end-0" style="bottom: 36px !important; right: 5px !important;">
+        <i class="fa-solid fa-chevron-up fa-lg"></i>
+      </button>
+
         <!--   Model Start  -->
         <div class="modal hide" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-fullscreen">
@@ -150,7 +154,7 @@
                             <img class="img-fluid mt-2" src="./img/logo.svg"/>
                         </a>
                     </div>
-                    <div class="col-8 col-sm-3 a_tbdr a_form_col">
+                    <div class="col-8 col-sm-3 a_tbdr a_form_col d-block d-sm-none">
                         <div>
                             
                         </div>
@@ -172,8 +176,9 @@
                               </ul>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-8 a_tbdr">
-                        <form class="d-sm-none d-md-none border p-1 rounded border-dark-subtle pt-0 pb-0 bg-white">
+                    <div class="col-12 col-sm-11 a_tbdr clearfix">
+                        <div class="float-end">
+                          <form class="d-sm-none d-md-none border p-1 rounded border-dark-subtle pt-0 pb-0 bg-white">
                             <div class="row">
                                 <div class="col-1 p-0">
                                     <!-- <img class="btn h-100" src="./img/search.svg"/> -->
@@ -184,8 +189,8 @@
                                 <div class="col-9 p-0"><input type="search" placeholder="packers and movers" class="form-control border border-0 shadow-none" id="exampleInputPassword1"></div>
                                 <div class="col-2 p-0"><button type="submit" class="btn float-end"><img src="./img/mic.svg"/></button></div>
                             </div>
-                          </form>
-                          <div class="d-none d-sm-block a_tbdr">
+                        </form>
+                          <div class="d-none d-sm-block a_tbdr float-end">
                             <ul class="nav mt-3 a_menu ms-4">
                                 <li class="nav-item">
                                   <a class="ps-1 pt-1 pb-1 pe-1 nav-link active" aria-current="page" href="#"><img src="./img/nav_language_icon.svg"/>English<img class="ps-1 pt-1 pb-1" src="./img/down_arrow5.svg"/></a>
@@ -229,7 +234,8 @@
                                     <a class="ps-1 pe-1 nav-link text-secondary-emphasis"><img src="./img/jd_login_icon.svg"/>Login / Sign Up</a>
                                   </li>
                             </ul>
-                          </div>                   
+                          </div>
+                        </div>                   
                     </div>
                 </div>
             </header>
@@ -498,23 +504,26 @@
                             </div>
                           </div>
 
-                          <form>
+                          <form class="">
                             <div class="row m-0">
                               <div class="col-4 a_tbdr">
-                                <input type="text" class="form-control shadow-none border-dark pt-2 pb-2" placeholder="First name" aria-label="First name">
+                                <div style="background:#EEE;" class="border border-dark d-flex flex-row align-items-center p-2 rounded-2">
+                                  <i class="fa-solid fa-location-dot"></i><input type="text" class="form-control form-control-sm bg-transparent border-0 shadow-none" placeholder="Anand Nagar, Bhopal" aria-label="First name">
+                                </div>
+                               
                               </div>
                               <div class="col-8 a_tbdr">
                                 <div class="row m-0 border border-dark rounded-2">
                                   <div class="col-9">
-                                    <input type="text" class="form-control shadow-none pt-2 pb-2 border-0" placeholder="Last name" aria-label="Last name">
+                                    <input type="text" class="form-control shadow-none pt-2 pb-2 border-0" placeholder="Search for Packers and Movers" aria-label="Last name">
                                   </div>
                                   <div class="col-3">
-                                    <div class="d-flex flex-row mb-3">
-                                      <div class="p-0">
+                                    <div class="d-flex flex-row">
+                                      <div class="p-1">
                                         <img class="img-fluid" src="./img/icons/micicon.svg"/>
                                       </div>
-                                      <div class="p-0">
-                                        <button class="btn a_orange mt-2 me-0">
+                                      <div class="p-1">
+                                        <button class="btn btn-sm a_orange mt-2 me-0">
                                           <img class="img-fluid" src="./img/icons/searchicon.svg"/>
                                         </button>
                                       </div>
@@ -584,7 +593,7 @@
                               </a>
                             </div>
                             <div class="col-3 p-0 ps-2 pe-2 a_tbdr">
-                              <a href="#" class="d-block rounded-3 position-relative p-2 h-100 a_xyz text-decoration-none" style="background: rgb(161, 0, 207);">
+                              <a href="#" class="d-block rounded-3 position-relative p-2 h-100 a_xyz text-decoration-none" style="background: #A100CF;">
                                 <span class="fw-bold fs-5 text-white d-block ms-2 me-3">Repairs & Services</span>
                                 <img src="./img/banner/webrepairimage.webp" class="img-fluid position-absolute end-0 bottom-0"/>
                               </a>
@@ -596,7 +605,7 @@
                               </a>
                             </div>
                             <div class="col-3 p-0 ps-2 a_tbdr">
-                              <a href="#" class="d-block rounded-3 position-relative p-2 h-100 a_xyz text-decoration-none" style="background-color: rgb(0, 172, 125);">
+                              <a href="#" class="d-block rounded-3 position-relative p-2 h-100 a_xyz text-decoration-none" style="background-color:#00AC7D;">
                                 <span class="fw-bold fs-5 text-white d-block ms-2 me-3">DOCTORS</span>
                                 <img src="./img/banner/doctorimage.webp" class="img-fluid position-absolute end-0 bottom-0"/>
                               </a>
