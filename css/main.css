@@ -104,6 +104,7 @@ ul.a_m33_icon >li > a > img {
     height:540px;
 }
 
+
 .mt-5.a_mt-5 {
     margin-top: 5rem!important;
 }
@@ -137,6 +138,31 @@ footer {
     font-size: 10.618px;
 }
 
+/* .a_xyz:hover {
+    cursor: pointer;
+    text-decoration: none;
+} */
+
+
+.a_xyz:hover > img {
+    transform-origin: right bottom;
+    transform: scale3d(1,1,1);
+    transition: all linear 0.2s;
+} 
+
+ .a_xyz:hover > img {
+    transform: scale3d(1.1,1.1,1);
+} 
+
+.a_xyz  span {
+    transform-origin: left bottom;
+    transform: scale3d(1,1,1);
+    transition: all linear 0.2s;
+} 
+
+.a_xyz:hover  span {
+    transform: scale3d(1.1,1.1,1);
+} 
 
 ::-webkit-input-placeholder {
     font-size: 15px;
@@ -179,6 +205,35 @@ footer {
        font-weight:bold;
        color: #333 !important;
        opacity: .5 !important;
+ }
+
+
+ div.a_animation {
+
+    animation-name:myanimation;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    animation-direction:alternate ;
+ }
+
+ @keyframes myanimation {
+       0% {
+          transform: translateY(0px);
+       }
+
+       40% {
+          transform: translateY(0px);
+       }
+
+       60% {
+        transform: translateY(-33px); 
+       }
+
+       100% {
+        transform: translateY(-33px);
+       }
+
  }
 
 
