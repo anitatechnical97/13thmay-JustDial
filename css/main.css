@@ -1,5 +1,5 @@
 body {
-    background-color:#fff ;
+    background-color:#E8E8E8 ;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -18,7 +18,7 @@ body {
 
 .a_tbdr {
     /* height: 1200px; */
-    border: 1px dashed red;
+    /* border: 1px dashed red; */
 } 
 
 /* .a_cont {
@@ -146,6 +146,16 @@ ul.a_m33_icon > li > a > span
 {
     font-size: 14px;
 }
+
+
+
+
+
+
+ul.a_new_icon > li > a.a_new_icon1
+{
+    width: 150px;
+} 
 
 .a_orange {
     background-color: #fe610c;;
@@ -317,7 +327,22 @@ footer {
  }
 
 
+
+ @media screen and (min-width: 577px) {
+      
+      main {
+        padding-left: 45px;
+        padding-right: 45px;
+      }
+  }
+
+
 @media screen and (max-width: 576px){
+
+    main {
+        padding-left: 14px;
+        padding-right: 14px;
+      }
 
     .a_form_col {
         height: 50px;
